@@ -64,6 +64,7 @@ let newdata = 0;
 let check = 0;
 function arrayLastElementThree(arr, n) {
     arrNum.push(n);
+    let secArr=[];
     for (let item of arrNum) {
         newArr.push(item);
     }
@@ -71,15 +72,15 @@ function arrayLastElementThree(arr, n) {
     while (count != 0) {
         count--;
         let arrlastnums = newArr.pop();
-        arr.push(arrlastnums)
+        secArr.push(arrlastnums)
     }
-    sum = arr.reduce(function (a, b) {
+    sum = secArr.reduce(function (a, b) {
         return a + b;
     });
     // return sum;
     arrNum.push(sum);
 };
-arrayLastElementThree();
+arrayLastElementThree(arr,n);
 
 // check = arrayLastElementThree(arr, n);
 // arrNum.push(check);
