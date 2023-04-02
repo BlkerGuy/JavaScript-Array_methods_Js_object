@@ -1,4 +1,6 @@
 "use strict";
+
+//Task 1:
 let inp = document.getElementById('inp');
 let btn = document.getElementById('btn');
 let list = document.getElementById('list');
@@ -55,14 +57,13 @@ function Delete(event) {
     event.target.parentElement.remove();
 }
 
+// Task 2 :
 let arrNum = [0, 1, 2, 3];
 let n = 6;
-let newArr = [];
-const arr = [];
 let sum = 0;
-// arrNum.push(n);
-function arrayLastElementThree(arr, n) {
-    let secArr = [];
+function arrayLastElementThree(arrNum, n) {
+    let newArr = []; //esas Arrayin datalarini yeni arr kocurtmek ucundu ki, birbasa mudaxile olunmasin.
+    let secArr = []; //ikinci array hesablanmis datanin neticesini oturmek ucundu.
     for (let item of arrNum) {
         newArr.push(item);
     }
@@ -79,37 +80,9 @@ function arrayLastElementThree(arr, n) {
     return sum;
 };
 for (let i = 0; i < n; i++) {
-    arrayLastElementThree(arr, n);
+    arrayLastElementThree(arrNum, n);
 }
 
 for (let item of arrNum) {
     console.log(item);
 };
-
-
-console.log("-----------------------")
-
-
-
-
-
-
-
-
-
-
-
-
-// let sum=0;
-// arrNum.forEach(arrayLastElementThree)
-
-
-
-
-
-// console.log(arrayLastElementThree(arrNum));
-
-
-
-// let test = arrNum.pop(1, 3)
-// console.log(test);
